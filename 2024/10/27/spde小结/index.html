@@ -1,0 +1,486 @@
+<!DOCTYPE html>
+<html 
+	lang="en">
+	<head>
+		<meta charset="UTF-8" />
+		<meta http-equiv="X-UA-Compatible" content="IE=edge" />
+		<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+		
+<link rel="stylesheet" href="/css/layout.css">
+
+		
+		<title> spde小结 -  yifan math</title>
+		<!-- <link rel="stylesheet" href="https://unpkg.com/mdui@1.0.2/dist/css/mdui.min.css" /> -->
+		<!-- <script src="https://unpkg.com/mdui@1.0.2/dist/js/mdui.min.js"></script> -->
+		
+<link rel="stylesheet" href="/lib/mdui/mdui.min.css">
+
+		
+<script src="/lib/mdui/mdui.min.js"></script>
+
+		<!-- lazyload -->
+		
+<script src="/lib/lazysizes.js"></script>
+
+		<!-- smooth-scrolling -->
+		
+<script src="/lib/smooth-scrolling.js"></script>
+
+		<!-- highlight -->
+		
+<link rel="stylesheet" href="/lib/highlight/atom-one-dark.min.css">
+
+		
+<script src="/lib/highlight/highlight.min.js"></script>
+
+		<!-- 预置 kiraicon -->
+		
+<link rel="stylesheet" href="/lib/iconfont/iconfont.css">
+
+		
+		<link
+			rel="shortcut icon"
+			href="https://kira.host/assets/Pictures/Others/116359b4ccf19917.jpg"
+			type="image/png"
+		/>
+		
+<link rel="stylesheet" href="/deps/css/APlayer.min.css">
+
+		
+		
+<script src="/deps/js/APlayer.min.js"></script>
+<script src="/deps/js/Meting.min.js"></script>
+
+	<meta name="generator" content="Hexo 6.3.0"></head>
+
+	<body>
+		<div
+			class="kira-background"
+			style="background-image: url('https://kira.host/assets/Pictures/Others/-f0d5cc34c6e5aa7_compressed.jpg')"
+		></div>
+		<div class="kira-header">
+    <a
+        class="kira-drawer-button mdui-ripple"
+        title="导航栏"
+        onclick="document.querySelector('.kira-sidebar-modal').classList.add('show');document.querySelector('.kira-sidebar#sidebar').classList.add('show');"
+    >
+        <i class="kirafont icon-menu"></i>
+    </a>
+    <a href="/" title="yifan math">
+        <img
+			src="https://kira.host/assets/Pictures/Others/20220922230447.jpg"
+			alt="Yifan"
+		/>
+    </a>
+</div>
+		<div class="kira-body">
+			<div class="kira-sidebar" id="sidebar">
+	<div class="kira-avatar mdui-ripple">
+		<a target="_blank" rel="noopener" href="https://kira.host/assets/Pictures/Others/20220922230447.jpg" title="Yifan">
+			<img
+				src="https://kira.host/assets/Pictures/Others/20220922230447.jpg"
+				alt="Yifan"
+			/>
+		</a>
+	</div>
+	<div class="kira-count">
+		<div><span>文章</span>3</div>
+		<div><span>标签</span>4</div>
+		<div><span>分类</span>2</div>
+	</div>
+	<div class="kira-list">
+		
+		<a
+			class="kira-list-item mdui-ripple false"
+			href="/"
+			title="回到首页"
+		>
+			<i
+				class="kirafont
+					
+						icon-home
+					"
+			></i>
+			<div class="kira-list-item-content">
+				回到首页
+			</div>
+		</a>
+		
+		<a
+			class="kira-list-item mdui-ripple false"
+			href="/archive.html"
+			title="文章归档"
+		>
+			<i
+				class="kirafont
+					
+						icon-container
+					"
+			></i>
+			<div class="kira-list-item-content">
+				文章归档
+			</div>
+		</a>
+		
+		<a
+			class="kira-list-item mdui-ripple false"
+			href="/about.html"
+			title="关于本人"
+		>
+			<i
+				class="kirafont
+					
+						icon-user
+					"
+			></i>
+			<div class="kira-list-item-content">
+				关于本人
+			</div>
+		</a>
+		
+		<a
+			class="kira-list-item mdui-ripple false"
+			href="/friends.html"
+			title="我的朋友"
+		>
+			<i
+				class="kirafont
+					
+						icon-team
+					"
+			></i>
+			<div class="kira-list-item-content">
+				我的朋友
+			</div>
+		</a>
+		
+	</div>
+	<aside id="kira-sidebar">
+		
+			<div class="kira-widget-wrap">
+	<div class="kira-widget kira-social">
+		
+			<a
+				class="mdui-ripple"
+				href="tencent://AddContact/?fromId=45&fromSubId=1&subcmd=all&uin=1548209235&website=www.oicqzone.com"
+				target="_blank"
+				mdui-tooltip="{content: 'QQ'}"
+				style="color: rgb(49, 174, 255); background-color: rgba(49, 174, 255, .1);"
+			>
+				<i
+					class="kirafont
+					
+						icon-QQ
+					"
+				></i>
+			</a>
+		
+			<a
+				class="mdui-ripple"
+				href="https://space.bilibili.com/498734263"
+				target="_blank"
+				mdui-tooltip="{content: '哔哩哔哩'}"
+				style="color: rgb(231, 106, 141); background-color: rgba(231, 106, 141, .15);"
+			>
+				<i
+					class="kirafont
+					
+						icon-bilibili
+					"
+				></i>
+			</a>
+		
+			<a
+				class="mdui-ripple"
+				href="https://github.com/<你的github id>/"
+				target="_blank"
+				mdui-tooltip="{content: 'GitHub'}"
+				style="color: rgb(25, 23, 23); background-color: rgba(25, 23, 23, .15);"
+			>
+				<i
+					class="kirafont
+					
+						icon-github
+					"
+				></i>
+			</a>
+		
+			<a
+				class="mdui-ripple"
+				href="https://gitee.com/<你的gitee id>"
+				target="_blank"
+				mdui-tooltip="{content: 'Gitee'}"
+				style="color: rgb(165, 15, 15); background-color: rgba(165, 15, 15, .15);"
+			>
+				<i
+					class="kirafont
+					
+						icon-gitee
+					"
+				></i>
+			</a>
+		
+	</div>
+</div>
+
+		
+			
+  <div class="kira-widget-wrap">
+    <h3 class="kira-widget-title">分类</h3>
+    <div class="kira-widget">
+      <ul class="category-list">
+        
+        
+
+        
+          <li class="category-list-item">
+            <a class="category-list-link" href="/categories/spde/">
+              spde
+            </a>
+            <span class="category-list-count">1</span>
+          </li>
+        
+          <li class="category-list-item">
+            <a class="category-list-link" href="/categories/随机过程/">
+              随机过程
+            </a>
+            <span class="category-list-count">1</span>
+          </li>
+        
+      </ul>
+    </div>
+  </div>
+
+		
+			
+	<div class="kira-widget-wrap">
+		<div id="randomtagcloud" class="kira-widget tagcloud kira-rainbow">
+			<a href="/tags/spde/" style="font-size: 10px;">spde</a> <a href="/tags/syf/" style="font-size: 20px;">syf</a> <a href="/tags/vortex/" style="font-size: 20px;">vortex</a> <a href="/tags/%E9%9A%8F%E6%9C%BA%E5%88%86%E6%9E%90/" style="font-size: 10px;">随机分析</a>
+		</div>
+		
+	</div>
+
+
+		
+			
+	<div class="kira-widget-wrap">
+		<h3 class="kira-widget-title">
+			Archive
+		</h3>
+		<div class="kira-widget">
+			<ul class="archive-list"><li class="archive-list-item"><a class="archive-list-link" href="/archives/2024/">2024</a><span class="archive-list-count">3</span></li></ul>
+		</div>
+	</div>
+
+
+		
+	</aside>
+	<div class="kira-copyright">
+		&copy; 2024
+		<a href="/">Yifan</a>
+		Powered by <a href="http://hexo.io/" target="_blank">Hexo</a> &
+		<a href="https://github.com/ch1ny/kira-hexo/" target="_blank">Kira-Hexo</a>
+		<br />
+		
+		
+	</div>
+</div>
+<div
+	class="kira-sidebar-modal"
+	id="sidebar-modal"
+	onclick="(function(self) {
+		self.classList.remove('show');
+		document.querySelector('.kira-sidebar.show#sidebar').classList.remove('show');
+	})(this)"
+></div>
+			<div class="kira-content">
+				<div id="kira-top-header"></div>
+				<div class="kira-main-content">
+					
+<link rel="stylesheet" href="/css/kira-image.css">
+
+
+<script src="/js/kira-image.js"></script>
+
+<div class="kira-image">
+    <div class="kira-image-modal">
+        <div class="kira-image-header">
+            <div class="kira-image-counter"></div>
+            <div class="kira-image-title"></div>
+            <div class="kira-image-operation">
+                <div class="kira-image-operation-button" id="kira-image-operation-button-zoom">
+                    <i class="kirafont icon-zoom-in"></i>
+                </div>
+                <div class="kira-image-operation-button" id="kira-image-operation-button-close">
+                    <i class="kirafont icon-close"></i>
+                </div>
+            </div>
+        </div>
+        <div class="kira-image-container">
+            <div class="kira-image-prev-button-panel">
+                <div class="kira-image-exchange-button">
+                    <i class="kirafont icon-left"></i>
+                </div>
+            </div>
+            <div class="kira-image-list">
+                <div class="kira-image-prev">
+                    <img />
+                </div>
+                <div class="kira-image-now">
+                    <img />
+                </div>
+                <div class="kira-image-next">
+                    <img />
+                </div>
+            </div>
+            <div class="kira-image-next-button-panel">
+                <div class="kira-image-exchange-button">
+                    <i class="kirafont icon-right"></i>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+
+	
+<link rel="stylesheet" href="/css/kira-code-copy.css">
+
+	
+<script src="/js/kira-code-copy.js"></script>
+
+
+<div class="kira-post">
+	<article>
+		
+		<div class="kira-post-cover">
+			<img
+				data-src="https://i0.moeyu.ltd/2015-00/Fp0RA7zPK-VwfLMv-6xZUcS7GIdR_960w.jpg"
+				data-sizes="auto"
+				alt="spde小结"
+				class="lazyload kira-post-cover-image disabled-kira-image"
+			/>
+			<h1>spde小结</h1>
+		</div>
+		
+		<div class="kira-post-meta kira-rainbow" style="margin:10px 0!important;">
+			<a><i class="kirafont icon-calendar-fill"></i>2024年10月27日</a>
+			<a><i class="kirafont icon-edit-fill"></i>645 字</a>
+			<a><i class="kirafont icon-time-circle-fill"></i>大概 4 分钟</a>
+		</div>
+		<h1><span id="vortex28">Vortex28</span></h1><p><strong>Yifan Shi</strong><br><em>September 15, 2024</em></p>
+<hr>
+<h2><span id="1-vortex-equation">1. Vortex Equation</span></h2><p>We consider the vortex equation:</p>
+<p>\begin{cases}<br>dx(u, t) &#x3D; \int_{\mathbb{R}^2} \nabla^\perp \ln ||x(u, t) - y|| , \mu_t(dy) , dt, \<br>x(u, 0) &#x3D; u, , u \in \mathbb{R}^2, \<br>\mu_t &#x3D; \mu_0 \circ x(\cdot, t)^{-1}, , t \geq 0.<br>\end{cases}</p>
+<p>This equation has two invariants:</p>
+<p>\begin{cases}<br>I_1 &#x3D; \int_{\mathbb{R}^2} u , \mu_t(du) \equiv \text{Const}, \quad I_2 &#x3D; \int_{\mathbb{R}^2} ||u - m||^2 , \mu_t(du) \equiv \text{Const}<br>\end{cases}</p>
+<p>where \begin{cases} m &#x3D; I_1(t) \end{cases} represents the center of mass.</p>
+<h3><span id="proof-of-invariants">Proof of Invariants</span></h3><ul>
+<li><p>For ( I_1 ):</p>
+<p>By symmetry in ( u, v ), we have:</p>
+<p>\begin{cases}<br>\frac{d}{dt} I_1 &#x3D; \frac{d}{dt} \int_{\mathbb{R}^2} u , \mu_t(du) &#x3D; \int_{\mathbb{R}^2} \int_{\mathbb{R}^2} \nabla^\perp \ln ||x(u, t) - x(v, t)|| , \mu_0(dv) , \mu_0(du) &#x3D; 0<br>\end{cases}</p>
+</li>
+<li><p>For ( I_2 ):</p>
+<p>Setting ( \tilde{x}(u, t) &#x3D; x(u, t) - m ), and using the symmetry of ( u ) and ( v ), we obtain:</p>
+<p>\begin{cases}<br>\frac{d}{dt} I_2 &#x3D; \int_{\mathbb{R}^2} \tilde{x}(u, t) \cdot \int_{\mathbb{R}^2} \nabla^\perp \ln ||\tilde{x}(u, t) - \tilde{x}(v, t)|| , \mu_0(dv) , \mu_0(du) &#x3D; 0<br>\end{cases}</p>
+</li>
+</ul>
+<hr>
+<h2><span id="2-differential-equation-for-mu_t">2. Differential Equation for ( \mu_t )</span></h2><p>For ( \varphi \in D(\mathbb{R}^2) &#x3D; C_0^\infty(\mathbb{R}^2) ), we derive:</p>
+<p>  \begin{cases}<br>\frac{d}{dt} \langle \mu_t, \varphi \rangle &#x3D; \int_{\mathbb{R}^2} \left\langle \nabla \varphi(u), \int_{\mathbb{R}^2} \nabla^\perp \ln ||u - v|| , \mu_t(dv) \right\rangle \mu_t(du) , dt<br>\end{cases}</p>
+<p>Using integration by parts and Stokes’ theorem:</p>
+<p>\begin{cases}<br>d\mu_t &#x3D; \left[ \int_{\mathbb{R}^2} \text{div} \frac{(u - v)^\perp}{||u - v||^2} , \mu_t(dv) , \mu_t - \int_{\mathbb{R}^2} \nabla^\perp \ln ||u - v|| , \mu_t(dv) , \nabla \mu_t \right] dt<br>\end{cases}</p>
+<p>Assuming ( \frac{d\mu_0}{d\lambda^2} &#x3D; \rho_0 ), we derive the partial differential equation for ( \rho_t ):</p>
+<p>\begin{cases}<br>\rho_t &#x3D; -\int_{\mathbb{R}^2} \nabla^\perp \ln ||u - v|| , \mu_t(dv) , \nabla \rho_t, \<br>\rho_0 &#x3D; \rho(0)<br>\end{cases}</p>
+<h3><span id="behavior-of-the-equation">Behavior of the Equation</span></h3><p>Considering:</p>
+<p>\begin{cases}<br>d\tilde{\mu}<em>t &#x3D; -\int</em>{\mathbb{R}^2} \nabla^\perp \ln ||u - v|| , \tilde{\mu}_t(dv) , \nabla \tilde{\mu}_t , dt + \Delta \tilde{\mu}_t , dt<br>\end{cases}</p>
+<hr>
+<h2><span id="3-heat-equation-in-mathbbr1-times-0-infty">3. Heat Equation in ( \mathbb{R}^1 \times [0, +\infty) )</span></h2><p>If we have the heat equation:</p>
+<p>\begin{cases}<br>\frac{\partial \rho(x, t)}{\partial t} &#x3D; \frac{1}{2} \Delta \rho(x, t),<br>\end{cases}</p>
+<p>then</p>
+<p>\begin{cases}<br>\rho(x, t) &#x3D; \rho(x, 0) * p_t, \quad p_t \sim N(0, t),<br>\end{cases}</p>
+<p>with:</p>
+<p>\begin{cases}<br>\rho(x, t) &#x3D; \frac{1}{\sqrt{2\pi t}} \int_{\mathbb{R}} e^{-\frac{(x - y)^2}{2t}} , \rho(y, 0) , dy<br>\end{cases}</p>
+<hr>
+<h2><span id="4-problems">4. Problems</span></h2><h3><span id="problem-1">Problem 1</span></h3><p>Consider the vortex equation with mass distribution ( +\Delta \mu_t ). Explore the limits as ( t \to +\infty ). At this time, ( I_1(t) ) and ( I_2(t) ) vary with ( t ). Determine their rate of change and limits.</p>
+<h4><span id="solution-strategy">Solution Strategy</span></h4><ol>
+<li><p>Focus on the Laplacian term:</p>
+<p>For ( I_1(t) &#x3D; \int_{\mathbb{R}^2} u , d\mu_t ):</p>
+<p>\begin{cases}<br>\frac{dI_1(t)}{dt} &#x3D; \int_{\mathbb{R}^2} u , \Delta \rho_t(u) , du &#x3D; 0<br>\end{cases}</p>
+<p>implying ( m(t) &#x3D; I_1(t) \equiv C ).</p>
+</li>
+<li><p>For ( I_2(t) &#x3D; \int_{\mathbb{R}^2} ||u - m(t)||^2 , \mu_t(du) ):</p>
+<p>\begin{cases}<br>\frac{dI_2(t)}{dt} &#x3D; 2<br>\end{cases}</p>
+<p>Thus, ( I_2(t) &#x3D; 2t + I_2(0) ).</p>
+</li>
+</ol>
+<h3><span id="problem-2">Problem 2</span></h3><p>Find a suitable normalization to make ( I_2(t) ) constant under the diffusion term.</p>
+<h4><span id="solution-strategy">Solution Strategy</span></h4><p>Using the measure ( \mu_t(t^s du) ) for ( s \neq 0 ):</p>
+<p>\begin{cases}<br>dI_2(t) &#x3D; 2st^{-s-1}<br>\end{cases}</p>
+<p>Therefore, this normalization fails to keep ( I_2(t) ) constant regardless of ( s ).</p>
+<hr>
+<p><em>End of Notes</em></p>
+
+	</article>
+
+	 
+  
+	<div class="kira-post-nav">
+		<nav class="post-nav">
+			      
+			<!-- 先找到与当前文字相同的目录 -->
+			   
+			<!-- 在找到当前文章所在的 index -->
+			          
+		</nav>
+	</div>
+	
+	<div class="kira-post-meta kira-rainbow">
+		
+			<a class="kirafont icon-container-fill -link" href="/categories/spde/">spde</a>
+		
+		
+			<a class="kirafont icon-tag-fill -none-link" href="/tags/spde/" rel="tag">spde</a> <a class="kirafont icon-tag-fill -none-link" href="/tags/syf/" rel="tag">syf</a> <a class="kirafont icon-tag-fill -none-link" href="/tags/vortex/" rel="tag">vortex</a>
+		
+	</div>
+	
+	<div class="kira-post-footer">
+		
+
+		
+	<div class="giscus"></div>
+  
+    <script src="https://giscus.app/client.js"
+      data-repo="-your github username-/-your giscus repo-"
+      data-repo-id="-your giscus repo ID-"
+      data-category="Announcements"
+      data-category-id="-giscus category id-"
+      data-mapping="pathname"
+      data-strict="0"
+      data-reactions-enabled="1"
+      data-emit-metadata="0"
+      data-input-position="top"
+      data-theme="light"
+      data-lang="en"
+      data-loading="lazy"
+      crossorigin="anonymous"
+      async  
+    ></script>
+  
+
+	</div>
+	
+</div>
+
+				</div>
+			</div>
+			<div class="kira-right-column">
+	<a onclick="document.querySelector('#kira-top-header').scrollIntoView({behavior: 'smooth'});" class="kira-backtotop" aria-label="回到顶部" title="回到顶部">
+		<button class="mdui-fab mdui-ripple">
+			<i class="kirafont icon-caret-up"></i>
+		</button>
+	</a>
+</div>
+
+		</div>
+	</body>
+</html>
